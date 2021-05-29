@@ -1,0 +1,19 @@
+<article class='media'>
+    {{#if renderImage}}
+        <figure class='media-left'>
+            <p class='image is-48x48'>
+                <img src="https://bulma.io/images/placeholders/96x96.png">
+            </p>
+        </figure>
+    {{/if}}
+
+    <div class='content'>
+        <p>
+            <strong>{{username}}</strong> <small>{{time}}</small>
+            <br>
+            {{comment}}
+            <br>
+            <small><a>Like</a> · <a>Dislike</a></small>
+        </p>
+    </div>
+</article>
