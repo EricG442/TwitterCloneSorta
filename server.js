@@ -10,7 +10,12 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('home', {Context: {
+        username: 'Eric Gish',
+        time: '1800',
+        OPcomment: 'Boobies',
+        commentsNum: '69'
+    }});
 });
 
 app.listen(PORT, () => {
